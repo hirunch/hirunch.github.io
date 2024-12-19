@@ -1,27 +1,49 @@
+html{
+  scroll-behavior: smooth;
+}
 * {
-  background-color: black;
+  background-color: rgb(2, 0, 16);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:wheat;
+  color:rgb(218, 196, 155);
   font-family: monospace;
 }
 
 .header{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1em;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 0.1em solid rgb(255, 255, 0);
+}
+
+.dev{
+  font-size: 1.5em;
+
+}
+
+.devImage{
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.5em;
 }
 
 .nav{
   display: flex;
   gap: 2em;
   list-style: none;
-  position: sticky;
+  
 } 
 
+.nav a{
+  text-decoration: none;
+}
+
 .nav li{
-  color: rgb(255, 255, 255);
   font-size: 1.5em;
   padding: 0.5em;
   border-radius: 0.5em;
@@ -34,6 +56,7 @@
 .nav li:hover{
   transform: scale(1.2);
   background-color: yellow;
+  font-weight: bold;
   color: black;
 }
 
@@ -41,13 +64,12 @@
   display: flex;
   margin-top: 5em;
   margin-left: 3em;
-  margin-right: 1em;
   
 }
 
 .userName{
   font-size: 7.5em;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
 }
 
 .shortName{
@@ -76,27 +98,69 @@
   display: flex;
   width: 20em;
   height: 30em;
+  margin-top: 4em;
   margin-left:auto;
+  position: relative;
+  animation: imagepic 5s 1;
 }
 
-.line1{
+@keyframes imagepic{
+  0%{
+    transform: translateX(20em);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.line2{
   border: 0;
   height: 0.1em;
   background-color: rgb(255, 255, 0);
+  width: 100%;
   
 }
 
-.dev{
-  display: flex;
+.personalInfo{
+  margin-top: 2em;
+  margin-left:3em;
+  padding: 1em;
+}
+
+.personalInfo h2{
+  font-size: 2.5em;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em;
   margin-top: 1em;
-  font-size: 2em;
 }
 
-.devImage{
-  width: 1.5em;
-  height: 1.5em;
-  background: black;
-  margin-left: 1.5em;
+.infoTable{
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+  border: 0.05em solid rgb(255, 255, 0);
+  border-radius: 1em ;
+  width: 30em;
+  padding: 1em;
+  margin: 0 auto;
+  justify-content: center;
+  transform: translateY(100px);
+  transition:opacity 05s ease-out, transform 0.5s ease-out;
 }
 
+.infoTable.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.infoTable td{
+  padding: 1em;
+}
+
+.infoTable tr{
+  margin-bottom: 1em;
+}
