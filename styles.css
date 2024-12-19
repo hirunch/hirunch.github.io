@@ -10,15 +10,14 @@
 .header{
   display: flex;
   justify-content: flex-end;
-  padding: 2em;
-
-  
+  padding: 1em;
 }
 
 .nav{
   display: flex;
   gap: 2em;
   list-style: none;
+  position: sticky;
 } 
 
 .nav li{
@@ -41,19 +40,20 @@
 .home{
   display: flex;
   margin-top: 5em;
-  margin-left: 1em;
+  margin-left: 3em;
   margin-right: 1em;
-  padding: 1em;
   
 }
 
-
 .userName{
   font-size: 7.5em;
+  margin-top: 0.2em;
 }
+
 .shortName{
   font-size: 0.2em;
 }
+
 .userTitle{
   font-size: 0.5em;
   margin-top: 0.5em;
@@ -81,9 +81,8 @@
 
 .line1{
   border: 0;
-  height: 0.2em;
-  background-color: yellow;
-  margin-top: 1em;
+  height: 0.1em;
+  background-color: rgb(255, 255, 0);
   
 }
 
@@ -100,3 +99,4 @@
   background: black;
   margin-left: 1.5em;
 }
+
