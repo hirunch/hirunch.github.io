@@ -37,16 +37,19 @@ html{
   display: flex;
   gap: 2em;
   list-style: none;
+  text-align: center;
+  align-items: center;
   
 } 
 
 .nav a{
   text-decoration: none;
+
 }
 
 .nav li{
+  padding: 0.3em;
   font-size: 1.5em;
-  padding: 0.5em;
   border-radius: 0.5em;
   align-items: center;
   font-weight: 0.5em;
@@ -63,6 +66,7 @@ html{
 
 .home{
   display: flex;
+  flex-direction: row;
   align-items: end;
   margin-top: 5em;
   width: 100%;
@@ -70,24 +74,46 @@ html{
 
 }
 
+.profile{
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  
+  
+}
+
 .userName{
   font-size: 7.5em;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  margin-bottom: 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .1em;
+  animation: typing 3.5s steps(30, end),blink-caret .75s step-end infinite;
+  border-right: 0.01em solid yellow;
+}
+
+
+@keyframes typing{
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent;}
+  50% {border-color: yellow;}
 }
 
 .shortName{
-  font-size: 0.2em;
+  font-size: 1.5em;
 }
 
 .userTitle{
-  font-size: 0.5em;
-  margin-top: 0.5em;
+  font-size: 2.5em;
+  margin-top: 0.2em;
 }
 
 .userLocation{
-  font-size: 0.2em;
+  font-size: 1.5em;
   margin-top: 0.2em;
   display: flex;
 }
