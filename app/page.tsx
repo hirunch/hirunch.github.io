@@ -39,10 +39,8 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-5xl my-5 md:my-10 lg:my-10">Hiruna Wijesinghe</h1>
             <h3 className="text-2xl">Mobile Apps and Website Developer</h3>
-            <p className="max-w-xl md:mx-auto w- lg:mx-auto py-4 leading-6 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt aspernatur officia molestiae! 
-              Ipsa nesciunt placeat sapiente nobis eligendi tempore expedita incidunt magni, minima eaque ut et 
-              tempora tenetur illo error?
-            </p>
+            <p className="max-w-xl md:mx-auto w- lg:mx-auto py-4 leading-6 mx-auto">
+            I'm Hiruna Wijesinnghe — Bachelor of Software Engineering undergraduate at The Open University of Sri lanka.I focus on Software Application Development , Web Developemnt, and Mobile App Developemnt.</p>
           </div>
           <div className="flex items-center text-4xl text-slate-600 justify-center my-10 gap-5">
             <a href="https://github.com/hirunch" target="_blank">
