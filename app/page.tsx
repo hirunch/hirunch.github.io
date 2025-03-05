@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagramSquare   } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
+
 import profilePicture from "../public/p2.png"
 import universityLogo from "../public/univesity_logo.png"
 import schoolLogo from "../public/school_logo.png"
@@ -31,16 +32,16 @@ export default function Home() {
                 <a href="#">blogs</a>
               </li>
               <li>
-                <a href="#" className="bg-yellow-300 py-2 px-2 border-none rounded-md shadow-md" download={"Resume"}>Resume</a>
+                <a href="#" className="bg-yellow-300 py-2 px-2 border-none rounded-md shadow-md">Resume</a>
               </li>
             </ul>
           </nav>
 
           <div className="text-center">
-            <h1 className="text-5xl my-5 md:my-10 lg:my-10">Hiruna Wijesinghe</h1>
-            <h3 className="text-2xl">Mobile Apps and Website Developer</h3>
+            <h1 className="text-5xl my-10 md:my-15 lg:my-15">Hiruna Wijesinghe</h1>
+            <h3 className="text-2xl">Software Applications, Mobile Apps and Websites Developer</h3>
             <p className="max-w-xl md:mx-auto w- lg:mx-auto py-4 leading-6 mx-auto">
-            I'm Hiruna Wijesinnghe — Bachelor of Software Engineering undergraduate at The Open University of Sri lanka.I focus on Software Application Development , Web Developemnt, and Mobile App Developemnt.</p>
+            I'm Hiruna Wijesinghe — Bachelor of Software Engineering undergraduate at The Open University of Sri lanka.I focus on Software Application Development , Web Developemnt, and Mobile App Developemnt.</p>
           </div>
           <div className="flex items-center text-4xl text-slate-600 justify-center my-10 gap-5">
             <a href="https://github.com/hirunch" target="_blank">
@@ -56,10 +57,15 @@ export default function Home() {
               <FaInstagramSquare/>
             </a>
           </div>
-
+          
           <div className="m-auto relative bg-gradient-to-b from-yellow-300 w-60 h-60 rounded-full p-5 mt-20">
-            <Image src={profilePicture} alt="user profile picture" layout="fill" objectFit="coverd"/>
+              <Image 
+              src={profilePicture} 
+              alt="user profile picture" 
+              layout="fill" 
+              objectFit="coverd"/>
           </div>
+            
         </section>
 
         <section>
