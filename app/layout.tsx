@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chamix Portfolio",
-  description: "Developed by Chamix",
+  title: "Hiruna Wijesinghe (chamix)",
+  description: "Developed by Hiruna Wijesinghe",
+  icons: {
+    icon: "/p2.png",
+    shortcut: "/p2.png",
+    apple: "/p2.png"
+  },
 };
 
 export default function RootLayout({
