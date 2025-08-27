@@ -76,8 +76,8 @@ export default function Home() {
           <div className="flex gap-4 justify-center md:justify-start mb-6">
             <a href="https://github.com/hirunch" target="_blank" className="hover:text-yellow-500 text-3xl"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/hiruna-wijesinghe/" target="_blank" className="hover:text-yellow-500 text-3xl"><FaLinkedin /></a>
-            <a href="https://x.com/hirun_0" target="_blank" className="hover:text-yellow-500 text-3xl"><FaSquareXTwitter /></a>
-            <a href="https://www.instagram.com/_.hiruna_/" target="_blank" className="hover:text-yellow-500 text-3xl"><FaInstagramSquare /></a>
+            <a href="https://x.com/" target="_blank" className="hover:text-yellow-500 text-3xl"><FaSquareXTwitter /></a>
+            <a href="https://www.instagram.com/hiruncw/" target="_blank" className="hover:text-yellow-500 text-3xl"><FaInstagramSquare /></a>
           </div>
           <a href="#contact" className="inline-block bg-yellow-400 text-white py-2 px-6 rounded shadow hover:bg-yellow-500 transition font-semibold">Contact Me</a>
         </div>
@@ -182,17 +182,13 @@ export default function Home() {
 
       {/* Contact & Footer */}
   <footer id="contact" className="mt-16 border-t-2 border-yellow-300 bg-white dark:bg-gray-900 py-10">
-        <div className="flex flex-col md:flex-row items-center justify-between px-8">
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">Contact</h3>
-            <p className="mb-1">Email: <a href="mailto:hirunawijesinghe@gmail.com" className="text-yellow-500 hover:underline">hirunawijesinghe@gmail.com</a></p>
-            <p>Location: Kandy, Sri Lanka</p>
-          </div>
+        <div className="flex flex-col items-center justify-center px-8">
+          <h3 className="text-xl font-bold mb-6">Contact</h3>
           <div className="flex gap-4 text-3xl">
             <a href="https://github.com/hirunch" target="_blank" className="hover:text-yellow-500"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/hiruna-wijesinghe/" target="_blank" className="hover:text-yellow-500"><FaLinkedin /></a>
-            <a href="https://x.com/hirun_0" target="_blank" className="hover:text-yellow-500"><FaSquareXTwitter /></a>
-            <a href="https://www.instagram.com/_.hiruna_/" target="_blank" className="hover:text-yellow-500"><FaInstagramSquare /></a>
+            <a href="https://x.com/" target="_blank" className="hover:text-yellow-500"><FaSquareXTwitter /></a>
+            <a href="https://www.instagram.com/hiruncw/" target="_blank" className="hover:text-yellow-500"><FaInstagramSquare /></a>
           </div>
         </div>
         <p className="text-center text-gray-500 mt-8">&copy; {new Date().getFullYear()} Hiruna Wijesinghe. All rights reserved.</p>
