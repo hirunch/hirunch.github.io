@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Hiruna Wijesinghe - Software Engineer & Full Stack Developer</title>
+      <title>Hiruna Wijesinghe - Software Engineer</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Hiruna Wijesinghe - Software Engineer & Full Stack Developer specializing in web, mobile, and desktop applications." />
       <meta name="keywords" content="software engineer, full stack developer, react, next.js, mobile development, Sri Lanka" />
